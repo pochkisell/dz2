@@ -9,11 +9,19 @@
     <section>
       <h3>Compare application containers to microservices</h3>
       <p>
-        Containers package an application and its dependencies into a portable,
-        isolated environment. Microservices are an architectural approach where
-        an application is divided into small, independent services. A
-        microservice can run inside a container, so they are not alternatives:
-        containers are a technology, while microservices are an architecture.
+        Application containers are a technology used to package an application
+        together with its dependencies and runtime environment into an isolated,
+        portable unit. Containers allow applications to run consistently across
+        different environments and can be deployed efficiently using platforms
+        such as Docker. Microservices, in contrast, are an architectural
+        approach in which a large application is divided into a set of small,
+        independent services. Each microservice is responsible for a specific
+        business function and can be developed, deployed, scaled, and maintained
+        independently. Containers and microservices are therefore not the same
+        concept. Containers provide a method for packaging and running
+        applications, while microservices describe how an application is
+        structured. In modern cloud environments, microservices are frequently
+        deployed using containers.
       </p>
     </section>
     <section>
@@ -23,22 +31,40 @@
         pricing guides)
       </h3>
       <p>
-        Instance/VM type and size - CPU, RAM, GPU, etc. Operating system - Linux
-        or Windows licensing. Usage time - hours per month and number of
-        instances. Storage - type (SSD/HDD), capacity, and I/O operations. Data
-        transfer/network traffic - especially outbound traffic. Pricing model -
-        On-Demand/Pay-as-you-go, Reserved Instances, or Spot pricing. Region -
-        prices vary between geographical regions. Additional services - load
-        balancers, public IPs, monitoring, backups, etc.
+        When estimating the cost of an Amazon EC2 instance or an Azure Virtual
+        Machine, several technical and business requirements should be
+        considered. The main factors include the instance or virtual machine
+        type and size, such as the required number of CPU cores, amount of RAM,
+        and GPU resources. The operating system is also important because
+        Windows-based machines may include additional licensing costs compared
+        with Linux-based systems. The estimated cost also depends on the
+        expected usage time, the number of virtual machines, and the pricing
+        model selected. For example, cloud providers offer pay-as-you-go
+        pricing, reserved capacity, and, in some cases, discounted
+        spot/interruptible instances. Other important factors are storage
+        capacity and storage type, input/output operations, data transfer and
+        network traffic, and the geographical cloud region, since prices vary
+        between regions. Additional services such as load balancers, monitoring,
+        backups, public IP addresses, and databases may also contribute to the
+        total deployment cost.
       </p>
     </section>
     <section>
       <h3>Explain what is serverless architecture?</h3>
       <p>
-        Serverless is a cloud architecture where the cloud provider manages the
-        servers and infrastructure. Developers deploy functions or applications
-        without managing servers directly. Resources are usually allocated
-        automatically and users pay mainly for actual usage.
+        Serverless architecture is a cloud computing model in which developers
+        do not need to manage the underlying servers, operating systems, or
+        infrastructure. The cloud provider is responsible for provisioning,
+        maintaining, scaling, and managing the required computing resources.
+        Applications are commonly implemented using functions that are executed
+        in response to events or requests. The infrastructure can automatically
+        scale according to demand, and the customer generally pays based on the
+        actual amount of computing resources or executions used. Despite its
+        name, serverless computing still relies on physical and virtual servers.
+        The term serverless refers to the fact that server management is
+        abstracted away from the developer. This model allows developers to
+        focus primarily on application logic rather than infrastructure
+        administration.
       </p>
     </section>
     <section>
@@ -47,12 +73,21 @@
         development
       </h3>
       <p>
-        Automation - infrastructure can be created and configured automatically.
-        Consistency - the same configuration can be reproduced reliably. Version
-        control - infrastructure changes can be tracked like source code. Faster
-        deployment - environments can be created quickly. Scalability -
-        infrastructure can be easily replicated or modified. Reduced human
-        errors - fewer manual configuration mistakes.
+        Infrastructure as Code (IaC) is an approach in which infrastructure
+        configuration is defined and managed using machine-readable
+        configuration files rather than manual processes. One major benefit is
+        automation, because infrastructure can be provisioned and configured
+        automatically. IaC also improves consistency and reproducibility,
+        allowing identical development, testing, and production environments to
+        be created reliably. Another important advantage is version control.
+        Infrastructure configurations can be stored in systems such as Git,
+        making changes traceable and allowing previous configurations to be
+        restored when necessary. IaC also reduces human error associated with
+        manual configuration. Furthermore, IaC supports rapid deployment and
+        scalability, since infrastructure can be replicated or modified
+        efficiently. It also integrates well with CI/CD pipelines, enabling
+        infrastructure changes to become part of an automated software
+        development and deployment process.
       </p>
     </section>
   </body>
